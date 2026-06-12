@@ -65,7 +65,7 @@ Hall plateau at higher fields.
 
 ![Overview of Rxy and Rxx at T = 3K](figures/report_figures/Fig05_Overview_Rxy_Rxx_T3K.png)
 
-*Figure 1: Hall resistance R_xy (upper) and longitudinal resistance R_xx (lower)
+*Figure 5: Hall resistance R_xy (upper) and longitudinal resistance R_xx (lower)
 as functions of perpendicular magnetic field at T = 3 K. The staircase structure
 in R_xy and the oscillatory behaviour in R_xx are the defining signatures of the
 integer quantum Hall regime. The shaded region marks the ν = 2 plateau window.*
@@ -76,14 +76,14 @@ integer quantum Hall regime. The shaded region marks the ν = 2 plateau window.*
 
 ![Zoomed Rxy plateau](figures/report_figures/Fig06_Nu2_Rxy_Zoom.png)
 
-*Figure 2: Magnified view of the Hall resistance R_xy(B) in the vicinity of the
+*Figure 6: Magnified view of the Hall resistance R_xy(B) in the vicinity of the
 ν = 2 plateau. The shaded region indicates the common plateau window over which
 R_xy remains approximately constant and close to the ideal quantised value h/2e²
 (dashed line).*
 
 ![ppm deviation up vs down sweep](figures/report_figures/Fig08_Nu2_UpDown_Deviation_From_Quantised.png)
 
-*Figure 3: Deviation of the measured Hall resistance from the ideal quantised
+*Figure 8: Deviation of the measured Hall resistance from the ideal quantised
 value h/2e² across the ν = 2 plateau, shown for both increasing and decreasing
 field sweeps. The close agreement between traces demonstrates reproducibility
 and negligible hysteresis. The deviation remains within tens of parts per million
@@ -95,7 +95,7 @@ across the plateau window.*
 
 ![Resistivity tensor](figures/report_figures/Fig09_ResistivityTensor_rho_xx_rho_xy.png)
 
-*Figure 4: Resistivity tensor components ρ_xy(B) (upper) and ρ_xx(B) (lower)
+*Figure 9: Resistivity tensor components ρ_xy(B) (upper) and ρ_xx(B) (lower)
 from Runs 3 and 4. At low magnetic field, ρ_xy follows the classical Hall
 relation (dashed line), while at higher fields it develops a plateau accompanied
 by strong suppression of ρ_xx, indicating the transition to quantised Hall
@@ -107,7 +107,7 @@ transport. The shaded region marks the ν = 2 plateau window.*
 
 ![Conductivity tensor masked](figures/report_figures/Fig10_ConductivityTensor_sigma_xx_sigma_xy_Masked.png)
 
-*Figure 5: Conductivity tensor components σ_xy(B) (upper) and σ_xx(B) (lower)
+*Figure 10: Conductivity tensor components σ_xy(B) (upper) and σ_xx(B) (lower)
 obtained by inversion of the resistivity tensor. The low-field region near B = 0
 is masked due to numerical instability of the inversion as ρ_xy → 0. Outside
 this region, minima in σ_xx coincide with plateaux in σ_xy at integer multiples
@@ -119,7 +119,7 @@ of e²/h, consistent with the localisation picture of the integer QHE.*
 
 ![Landau fan diagram](figures/appendix_figures/Fig19_LandauFan_SdH_Index_vs_InvB.png)
 
-*Figure 6: Landau fan diagram constructed from Shubnikov–de Haas oscillation
+*Figure 19: Landau fan diagram constructed from Shubnikov–de Haas oscillation
 extrema in the longitudinal resistance. The linear relationship between extremum
 index n and inverse field 1/B_peak confirms a single well-defined carrier
 population. The slope of the linear fit yields n_s independently of the absolute
@@ -131,7 +131,7 @@ field calibration.*
 
 ![Temperature overlay](figures/report_figures/Fig12_Vxx_Overlay_T3_T4_T5K.png)
 
-*Figure 7: Longitudinal voltage V_xx(B) measured at T = 3 K, 4 K, and 5 K in
+*Figure 12: Longitudinal voltage V_xx(B) measured at T = 3 K, 4 K, and 5 K in
 the common positive-field window. The monotonic decrease in Shubnikov–de Haas
 oscillation amplitude with increasing temperature is consistent with thermal
 broadening of Landau levels (Lifshitz–Kosevich damping). The oscillation
@@ -146,7 +146,7 @@ across this temperature range.*
 
 ![Hall-bar wiring diagram](figures/report_figures/Fig04_HallBar_Wiring_Configuration.png)
 
-*Figure 8: Hall-bar geometry and measurement wiring configuration. The diagram
+*Figure 4: Hall-bar geometry and measurement wiring configuration. The diagram
 shows the current injection path (black), longitudinal voltage probes V_xx
 (blue, GPIB:8), and Hall voltage probes V_xy (green, GPIB:9), and the lock-in
 detection scheme used to extract R_xx = V_xx/I and R_xy = V_xy/I at f = 67 Hz.*
@@ -155,7 +155,7 @@ detection scheme used to extract R_xx = V_xx/I and R_xy = V_xy/I at f = 67 Hz.*
 
 ![Hall-bar geometry schematic](figures/appendix_figures/Fig21_HallBar_Geometry_Schematic.png)
 
-*Figure 9: Annotated schematic of the Hall-bar showing the channel width W and
+*Figure 21: Annotated schematic of the Hall-bar showing the channel width W and
 longitudinal probe separation L used to determine the geometry factor W/L =
 0.0610 ± 0.0094 for conversion of resistance to resistivity. The 15.4% relative
 uncertainty in W/L is the dominant systematic contribution to the mobility.*
