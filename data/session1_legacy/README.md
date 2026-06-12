@@ -5,21 +5,19 @@
 
 ---
 
-## Why There Are No CSV Files Here
+## CSV Files
 
 Session 1 was the first cryogenic measurement session of the project. Nine
 field sweeps were performed, reaching a base temperature of approximately
 1.9–2 K — lower than was achievable in Session 2 due to better cryostat
-performance on this occasion. However, **none of the Session 1 CSV files
-survived** to the final analysis stage. The files were saved during the
-session but were subsequently lost before the quantitative analysis began.
+performance on this occasion.
 
-All quantitative results in the final report and in both analysis scripts
+However, all quantitative results in the final report and in both analysis scripts
 are derived exclusively from Session 2 data (20 November 2025).
 
 ---
 
-## What Does Survive — Eight PNG Screenshots
+## Eight PNG Screenshots
 
 Eight PNG screenshots of the live acquisition display were captured during
 Session 1 and constitute the only surviving record of those measurements.
