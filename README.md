@@ -19,7 +19,7 @@ quantised Hall resistance plateau at filling factor ν = 2 accompanied by strong
 suppression of the longitudinal resistance.
 
 The Hall resistance on the ν = 2 plateau was measured to deviate from the ideal
-quantised value h/2e² by only **tens of parts per million**. Carrier densities
+quantised value h/2e² by **tens of parts per million**. Carrier densities
 extracted from four independent classical and quantum methods agree to within
 **0.3%**, demonstrating strong internal consistency of the analysis.
 
