@@ -41,6 +41,86 @@ extracted from four independent classical and quantum methods agree to within
 
 ---
 
+## Software and Instrumentation Overview
+
+This repository contains the complete software workflow used to acquire, process, analyse, and visualise magnetotransport data from a GaAs/AlGaAs two-dimensional electron gas quantum Hall experiment.
+
+The project is not only a final physics write-up; it also includes the machine-facing acquisition code and the reproducible analysis pipeline used to generate the reported results.
+
+The codebase is split into two main parts:
+
+* `src/acquisition/` — real-time machine interaction, instrument communication, and data logging
+* `src/analysis/` — data processing, parameter extraction, uncertainty-aware analysis, and figure generation
+
+The acquisition software communicates with laboratory instruments using PyVISA, records synchronised voltage and magnetic-field monitor data, and writes timestamped CSV files for later analysis. The analysis code then converts raw voltages into Hall and longitudinal transport quantities, extracts carrier density using multiple independent methods, calculates mobility and transport lifetime, constructs resistivity and conductivity tensors, and regenerates the final report figures.
+
+## Live Data Acquisition and Machine Interaction
+
+The acquisition script controls and records from multiple laboratory instruments during a magnetic-field sweep:
+
+```bash
+python src/acquisition/qhe_data_acquisition.py
+```
+
+The software interfaces with:
+
+| Instrument                       | Measurement role                      | Interface |
+| -------------------------------- | ------------------------------------- | --------- |
+| SR830 lock-in amplifier          | Longitudinal voltage, `V_xx`          | GPIB      |
+| SR830 lock-in amplifier          | Hall voltage, `V_xy`                  | GPIB      |
+| Keithley 2100 digital multimeter | Magnetic-field monitor voltage, `V_B` | USB/VISA  |
+
+During acquisition, the program:
+
+* queries all instruments once per second
+* records lock-in `X`, `Y`, `R`, and phase channels
+* records the field-proportional monitor voltage
+* writes timestamped CSV files
+* displays live plots of voltage versus time and magnetic-field monitor voltage
+* produces raw datasets suitable for direct downstream analysis
+
+This means the repository contains the original software used to interact with the experimental hardware, not just post-processed data and final plots.
+
+## Analysis Pipeline
+
+The analysis is implemented as a reproducible Python workflow rather than manual spreadsheet processing.
+
+Example usage:
+
+```bash
+python src/analysis/qhe_analysis_pipeline.py
+python src/analysis/qhe_final_analysis.py
+```
+
+The pipeline performs:
+
+1. loading and cleaning of raw CSV files
+2. magnetic-field calibration
+3. Hall and longitudinal resistance calculation
+4. quantum Hall plateau identification
+5. Shubnikov–de Haas oscillation analysis
+6. Landau fan fitting
+7. carrier density extraction using multiple methods
+8. mobility and transport lifetime estimation
+9. resistivity and conductivity tensor construction
+10. automatic export of publication-style figures
+
+The final analysis script stores the main constants, calibration choices, and frozen analysis parameters in one place, so the reported figures can be regenerated from the committed dataset.
+
+## Technical Stack
+
+* Python
+* NumPy
+* SciPy
+* Matplotlib
+* PyVISA
+* GPIB / USB instrument communication
+* SR830 lock-in amplifiers
+* Keithley 2100 digital multimeter
+* CSV-based experimental data pipeline
+
+---
+
 ## The Physics
 
 The **quantum Hall effect** arises in a two-dimensional electron gas subjected
