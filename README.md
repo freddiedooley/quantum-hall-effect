@@ -45,7 +45,7 @@ extracted from four independent classical and quantum methods agree to within
 
 This repository contains the complete software workflow used to acquire, process, analyse, and visualise magnetotransport data from a GaAs/AlGaAs two-dimensional electron gas quantum Hall experiment.
 
-The project is not only a final physics write-up; it also includes the machine-facing acquisition code and the reproducible analysis pipeline used to generate the reported results.
+The project also includes the machine-facing acquisition code and the analysis pipeline used to generate the reported results.
 
 The codebase is split into two main parts:
 
