@@ -1,0 +1,99 @@
+# .gitignore
+# ==========
+# QHE-GaAs-2DEG project — files and directories excluded from version control.
+
+# -----------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# -----------------------------------------------------------------------
+# Jupyter notebooks (exploratory work — not part of this repo)
+# -----------------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb
+
+# -----------------------------------------------------------------------
+# Data files
+# If your Session 2 CSVs are large, consider Git LFS or external hosting.
+# Uncomment the line below to exclude all CSVs from version control and
+# instead document them in data/session2/README_runs.md.
+# -----------------------------------------------------------------------
+# *.csv
+
+# -----------------------------------------------------------------------
+# Generated figures
+# The figures/ directory is committed so that the README can reference
+# inline images. If you prefer to regenerate figures on every run,
+# uncomment the lines below.
+# -----------------------------------------------------------------------
+# figures/report_figures/
+# figures/appendix_figures/
+
+# -----------------------------------------------------------------------
+# macOS
+# -----------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# -----------------------------------------------------------------------
+# Windows
+# -----------------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# -----------------------------------------------------------------------
+# Editors and IDEs
+# -----------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+
+# -----------------------------------------------------------------------
+# LaTeX (if report source is ever added)
+# -----------------------------------------------------------------------
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# -----------------------------------------------------------------------
+# Miscellaneous
+# -----------------------------------------------------------------------
+*.log
+*.tmp

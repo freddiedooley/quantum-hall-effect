@@ -1,0 +1,31 @@
+# requirements.txt
+# =================
+# Python dependencies for the QHE-GaAs-2DEG project.
+#
+# Analysis scripts (qhe_analysis_pipeline.py, qhe_final_analysis.py):
+#   numpy, matplotlib, scipy
+#
+# Data acquisition script (qhe_data_acquisition.py):
+#   pyvisa  — VISA instrument communication (SR830 lock-ins, Keithley 2100)
+#
+# Install all dependencies with:
+#   pip install -r requirements.txt
+#
+# Tested with Python 3.10+ on macOS and Windows 10.
+# A conda environment is also suitable:
+#   conda create -n qhe python=3.10
+#   conda activate qhe
+#   pip install -r requirements.txt
+#
+# Note: pyvisa requires a VISA backend to communicate with instruments.
+# The National Instruments NI-VISA backend was used during data acquisition.
+# For analysis only (no instruments connected), pyvisa is not required.
+# NI-VISA is available at: https://www.ni.com/en/support/downloads/drivers/download.ni-visa.html
+
+# ---- Core scientific stack ----
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+
+# ---- Instrument communication (acquisition only) ----
+pyvisa>=1.13
