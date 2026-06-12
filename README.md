@@ -117,7 +117,7 @@ of e²/h, consistent with the localisation picture of the integer QHE.*
 
 ## Carrier Density — Landau Fan Analysis
 
-![Landau fan diagram](figures/report_figures/Fig19_LandauFan_SdH_Index_vs_InvB.png)
+![Landau fan diagram](figures/appendix_figures/Fig19_LandauFan_SdH_Index_vs_InvB.png)
 
 *Figure 6: Landau fan diagram constructed from Shubnikov–de Haas oscillation
 extrema in the longitudinal resistance. The linear relationship between extremum
