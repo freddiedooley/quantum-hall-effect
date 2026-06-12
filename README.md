@@ -247,8 +247,8 @@ quantum-hall-effect/
 │   └── lab_diary.pdf                  — complete project diary
 │
 ├── data/
-│   ├── session1_legacy/               — Session 1 PNG screenshots (no CSVs survive)
-│   │   ├── README.md                  — explains missing CSVs, documents all 9 runs
+│   ├── session1_legacy/               — Session 1 PNG screenshots and raw CSV data
+│   │   ├── README.md                  
 │   │   └── *.png (8 files)
 │   └── session2/                      — Session 2 primary dataset (all CSVs)
 │       ├── README_runs.md             — full run log with file descriptions
