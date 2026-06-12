@@ -6,8 +6,6 @@
 **Excitation:** SR830 lock-in amplifiers, f = 67 Hz, I ≈ 0.84 µA (plateau-derived)  
 
 All quantitative results in the final report derive exclusively from this session.
-Session 1 (6 November 2025) produced no surviving CSV files — see
-`data/session1_legacy/README.md` for details.
 
 ---
 
