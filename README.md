@@ -339,7 +339,7 @@ Figures will be written to `figures/report_figures/` and `figures/appendix_figur
 | Cryostat vacuum leak | Prevented stable operation below ~3 K | Restricts temperature range to 3–5 K; reduces visibility of higher ν plateaux |
 | Excitation frequency discrepancy | Acquisition script issued FREQ70 (70 Hz) but front panel was set to 67 Hz | No effect on analysis |
 | Run 6 filename bug | Some intermediate scripts used `163959.csv` (aborted run) instead of `164654.csv` | Fixed in both final scripts |
-| Session 1 CSVs lost | No CSV files survive from 6 November 2025 session | Eight PNG screenshots preserved in `data/session1_legacy/` |
+| Session 1 CSVs lost | No CSV files survive from 6 November 2025 session (later recovered) | Eight PNG screenshots preserved in `data/session1_legacy/` |
 
 ---
 
@@ -381,20 +381,8 @@ multiprobe conductors. *Physical Review B*, 38(14):9375–9389, 1988.
 
 ## Acknowledgements
 
-Project partner: Christina Mooney, who contributed to the experimental sessions
-and early analysis work.
+Project partner: Christina Mooney
 
 Supervisor: Dr Chris Mellor, School of Physics and Astronomy, University of
 Nottingham, who provided the sample, cryogenic apparatus, and guidance throughout
 the project.
-
----
-
-## License
-
-This repository is made available for educational and research reference purposes.
-If you use this work, please cite the laboratory report:
-
-> F. Dooley, *Observation of the Integer Quantum Hall Effect in a GaAs/AlGaAs
-> Two-Dimensional Electron Gas*, Laboratory Report, PHYS3003, University of
-> Nottingham, January 2026.
